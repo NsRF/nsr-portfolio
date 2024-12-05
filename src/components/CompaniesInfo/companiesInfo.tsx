@@ -3,7 +3,7 @@
 export default function CompaniesInfo(){
     return (
         <>
-            <div className="bg-neutral-900 rounded py-24 sm:py-32">
+            <div className="mt-5 bg-zinc-500 bg-opacity-20 rounded py-20 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:max-w-none">
                         <h2 className="text-lg/8 font-semibold text-white">Some companies I&#39;ve already worked

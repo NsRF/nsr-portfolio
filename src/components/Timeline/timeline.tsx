@@ -2,24 +2,64 @@
 type TimeLineInfos = {
     title: string;
     date: string;
+    role?: string;
     description: string;
 }
 
 const timeLineInformations: TimeLineInfos[] = [
     {
-        title: "Career Start",
-        date: "20/05/2015",
-        description: "SDAUSDAUDNANDAUNDAUNDA"
+        title: "Prover Soluções em Tecnologia",
+        date: "03/2019 - Present",
+        role: "Senior Developer, Tech Lead, and DevOps Specialist",
+        description: "•\tPlayed multiple roles, from senior developer to solution architect, across diverse projects.\n" +
+            "\n" +
+            "•\tRefactored legacy code into clean, efficient solutions, primarily focusing on JavaScript technologies like Node.js, NestJS, and Angular.\n" +
+            "\n" +
+            "•\tDesigned and implemented secure authentication systems using JWT and other security best practices.\n" +
+            "\n" +
+            "•\tManaged databases across various platforms: SQL Server, Postgres, MongoDB, Redis, MySQL, Oracle, and CosmosDB.\n" +
+            "\n" +
+            "•\tBuilt APIs using ASP.NET, NestJS, and Node.js, and implemented frontends with React, React Native, Next.js, Redux, Angular, and AngularJS.\n" +
+            "\n" +
+            "•\tWorked with Kubernetes and Docker to containerize applications and ensure smooth deployment pipelines.\n" +
+            "\n" +
+            "•\tAutomated deployments with GitHub Actions, incorporating CI/CD pipelines for seamless delivery.\n" +
+            "\n" +
+            "•\tCreated microservices to segment application responsibilities and improve scalability\n"
     },
     {
-        title: "Seguralta Corretora de Seguros",
-        date: "20/05/2015",
-        description: "ISADJISDAJDIAJDIAJIJ"
+        title: "Pieracciani (PierX Project)",
+        date: "01/2021 - 06/2023 (Part-time)",
+        role: "Senior Node.js Developer",
+        description: "•\tDeveloped and maintained APIs using Node.js and NestJS, ensuring efficient and scalable backend services.\n" +
+            "\n" +
+            "•\tCreated reports with GraphQL to streamline data queries for client applications.\n" +
+            "\n" +
+            "•\tRefactored and implemented new features in frontend frameworks, including React and Angular.\n" +
+            "\n" +
+            "•\tFixed bugs and optimized business logic to enhance system reliability and performance.\n" +
+            "\n" +
+            "•\tManaged and administered MongoDB databases, ensuring data integrity and availability.\n" +
+            "•\tDelivered high-quality solutions, maintaining consistent uptime and optimal performance.\n" +
+            "\n" +
+            "•\tCollaborated in agile environments, leveraging Scrum to manage sprints effectively.\n"
     },
     {
-        title: "Seguralta Insurance",
-        date: "20/05/2015",
-        description: "ISADJISDAJDIAJDIAJIJ"
+        title: "Seguralta Insurance Broker",
+        date: "10/2019 - 03/2021",
+        role: "Mid-Level .NET Developer",
+        description: "•\tDeveloped and maintained automation tools using C#, focusing on improving business processes.\n" +
+            "\n" +
+            "•\tCreated robots for data acquisition in the insurance field, streamlining critical data collection tasks.\n" +
+            "\n" +
+            "•\tManaged and optimized databases, including SQL Server, MySQL, and MongoDB, to ensure reliability and performance.\n" +
+            "\n" +
+            "•\tMaintained the entire IT infrastructure, including cloud environments, servers, and VPNs.\n" +
+            "\t\n• Successfully implemented automations that reduced manual work and improved operational efficiency.\n" +
+            "\n" +
+            "•\tConsistently delivered clean, well-structured code, adhering to industry best practices.\n" +
+            "\n" +
+            "•\tActively worked with agile methodologies, such as Scrum and Kanban, to ensure efficient project management and delivery.\n"
     }
 ]
 
@@ -65,7 +105,17 @@ export default function TimeLine() {
                                             {info.date}
                                         </a>
                                     </div>
-                                    <p className="text-gray-700 mb-6">{info.description}</p>
+                                    <a
+                                        className="mt-4 mb-4 font-semibold text-zinc-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm"
+                                    >
+                                        {info.role}
+                                    </a>
+                                    <p className="text-gray-700 mt-2 mb-6">  {info.description.split('\n').map((line, index) => (
+                                        <span key={index}>
+      {line}
+                                            <br/>
+    </span>
+                                    ))}</p>
                                 </div>
                             </div>
                         </li>

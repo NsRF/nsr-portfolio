@@ -5,8 +5,8 @@ import TimeLine from "@/components/Timeline/timeline";
 export default function ContentMainPage() {
     return (
         <>
-            <Info></Info>
             <TimeLine></TimeLine>
+            <Info></Info>
         </>
     )
 }
