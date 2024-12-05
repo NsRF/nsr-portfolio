@@ -18,6 +18,22 @@ export interface NavBarProps {
     nameOnPath: string
 }
 
+type NavBarOptions = {
+    name: string;
+    path: string;
+}
+
+const navBarPaths: NavBarOptions[] = [
+    {
+    name: "Home",
+    path: "/",
+    },
+    {
+        name: "Personal Projects",
+        path: "/personal"
+    },
+]
+
 export default function NavBarIndex({nameOnPath}: NavBarProps) {
 
 
@@ -39,10 +55,13 @@ export default function NavBarIndex({nameOnPath}: NavBarProps) {
             </Dropdown>
             <NavbarDivider className="max-lg:hidden" />
             <NavbarSection className="max-lg:hidden">
-                <NavbarItem href="/" current={nameOnPath === "home"}>
-                    Home
-                </NavbarItem>
-                <NavbarItem href="/personal" current={nameOnPath === "personal"}>Personal Projects</NavbarItem>
+                {
+                    navBarPaths.map((nav, idx) =>(
+                        <NavbarItem key={idx} className="font-sans" href={nav.path} current={nameOnPath === nav.name}>
+                            {nav.name}
+                        </NavbarItem>
+                    ))
+                }
             </NavbarSection>
             <NavbarSpacer />
             <NavbarSection>
