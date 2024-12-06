@@ -65,7 +65,7 @@ const timeLineInformations: TimeLineInfos[] = [
 
 export default function TimeLine() {
     return (
-        <div className="flex justify-center items-center min-h-screen">
+        <div className="flex  justify-center items-center min-h-screen">
             <div className="max-w-2xl mx-auto flex flex-col items-center">
                 <h3 className="text-2xl text-white font-bold mb-6">Career Timeline</h3>
                 <ol>
@@ -74,7 +74,7 @@ export default function TimeLine() {
                             className={`border-l-2 ${index % 2 === 0 ? 'border-slate-600' : 'border-slate-500'}`}>
                             <div className="md:flex flex-start">
                                 <div
-                                    className={`w-6 h-6 flex items-center justify-center rounded-full -ml-3.5 ${
+                                    className={`w-6 h-6 flex  items-center justify-center rounded-full -ml-3.5 ${
                                         index % 2 === 0 ? 'bg-red-500' : 'bg-slate-500'
                                     }`}
                                 >

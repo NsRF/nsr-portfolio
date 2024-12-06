@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nasser S. Farhat",
+  title: "Nasser Farhat",
   description: "Nasser's Portfolio",
 };
 
