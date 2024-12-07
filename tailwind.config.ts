@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'wave-pattern': "url('/wave.svg')",
+        'wave-header': "url('/wave-header.svg')",
+      }
     },
   },
   plugins: [],

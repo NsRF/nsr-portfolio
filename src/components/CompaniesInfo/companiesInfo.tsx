@@ -16,14 +16,15 @@ export default function CompaniesInfo() {
                         alt: "CCAB",
                         src: "https://ccab.org.br/wp-content/uploads/Logos-18-CCAB.png"
                     }, {
-                        alt: "Intelltech",
-                        src: "/companies/intelltech.png"
-                    }, {
                         alt: "MedGrupo",
                         src: "/companies/medgrupo.png"
                     }, {
                         alt: "Pncp",
                         src: "/companies/pncp.webp"
+                    },
+                    {
+                        alt: "Intelltech",
+                        src: "/companies/intelltech.png"
                     }].map((company, index) => (
                         <div key={index} className="bg-white/5 p-8 sm:p-10">
                             <motion.div
