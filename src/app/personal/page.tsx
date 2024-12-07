@@ -1,13 +1,14 @@
 import NavBarIndex from "@/components/NavBar/NavBarIndex";
 import {StackedLayout} from "@/components/stacked-layout";
+import {SidebarLayout} from "@/components/sidebar-layout";
+import SideBarIndex from "@/components/sidebar/SideBarIndex";
 
 
 export default function PersonalPage(){
     return(
         <>
-            <StackedLayout navbar={<NavBarIndex nameOnPath={"Personal Projects"}>
-            </NavBarIndex>} sidebar={<></>}>
-            </StackedLayout>
+            <SidebarLayout navbar={<></>} sidebar={<><SideBarIndex nameOnPath={"Personal Projects"}></SideBarIndex></>}>
+            </SidebarLayout>
         </>
     )
 }
