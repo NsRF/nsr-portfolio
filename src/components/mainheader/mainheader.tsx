@@ -1,11 +1,11 @@
 export default function MainHeader() {
     return (
-        <div className="relative isolate overflow-hidden bg-wave-header px-6 py-24 sm:py-32 lg:px-8">
-            {/*<img*/}
-            {/*    alt=""*/}
-            {/*    src="https://st2.depositphotos.com/2702639/10537/i/450/depositphotos_105373622-stock-photo-lines-of-code-on-computer.jpg"*/}
-            {/*    className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30 blur-md"*/}
-            {/*/>*/}
+        <div className="relative isolate overflow-hidden rounded-2xl px-6 py-24 sm:py-32 lg:px-8">
+            <img
+                alt=""
+                src="/wave-header.svg"
+                className="absolute inset-0 -z-10 h-full w-full object-cover opacity-90 shadow-red-500/50 shadow-2xl"
+            />
             <div className="mx-auto max-w-3xl text-center space-y-8">
                 <h1 className="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-red-700 animate-pulse">
                     Nasser Farhat
