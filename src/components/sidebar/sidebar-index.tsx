@@ -1,16 +1,6 @@
-import { Avatar } from '@/components/catalyst-components/avatar'
-import {
-    Dropdown,
-    DropdownButton,
-    DropdownDivider,
-    DropdownItem,
-    DropdownLabel,
-    DropdownMenu,
-} from '@/components/catalyst-components/dropdown'
 import {
     Sidebar,
     SidebarBody,
-    SidebarFooter,
     SidebarHeader,
     SidebarItem,
     SidebarLabel,
@@ -18,25 +8,10 @@ import {
     SidebarSpacer,
 } from '@/components/catalyst-components/sidebar'
 import {
-    ArrowRightStartOnRectangleIcon,
-    ChevronDownIcon,
-    ChevronUpIcon,
-    Cog8ToothIcon,
-    LightBulbIcon,
-    PlusIcon,
-    ShieldCheckIcon,
     UserIcon,
 } from '@heroicons/react/16/solid'
 import {
-    Cog6ToothIcon,
     HomeIcon,
-    InboxIcon,
-    MagnifyingGlassIcon,
-    MegaphoneIcon,
-    QuestionMarkCircleIcon,
-    SparklesIcon,
-    Square2StackIcon,
-    TicketIcon,
 } from '@heroicons/react/20/solid'
 
 type SideBarOptions = {
@@ -71,7 +46,7 @@ export default function SidebarIndex({nameOnPath} : SideBarProps) {
                 <SidebarSection>
                     {sideBarPaths.map((side, idx) => (
                         <SidebarItem key={idx} current={nameOnPath === side.name} href={side.path}>
-                            <side.icon></side.icon>
+                            <side.icon className="icon-class" />
                             <SidebarLabel>{side.name}</SidebarLabel>
                         </SidebarItem>
                     ))}

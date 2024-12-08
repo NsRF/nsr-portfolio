@@ -91,9 +91,9 @@ export function TableHeader({ className, ...props }: React.ComponentPropsWithout
 }
 
 export function TableCell({ className, children, ...props }: React.ComponentPropsWithoutRef<'td'>) {
-  let { bleed, dense, grid, striped } = useContext(TableContext)
-  let { href, target, title } = useContext(TableRowContext)
-  let [cellRef, setCellRef] = useState<HTMLElement | null>(null)
+  const { bleed, dense, grid, striped } = useContext(TableContext)
+  const { href, target, title } = useContext(TableRowContext)
+  const [cellRef, setCellRef] = useState<HTMLElement | null>(null)
 
   return (
     <td

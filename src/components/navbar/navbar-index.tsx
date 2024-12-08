@@ -13,7 +13,6 @@ import {
 } from '@heroicons/react/16/solid'
 import Image from "next/image";
 import {InboxIcon} from "@heroicons/react/24/solid";
-import {Text} from "@/components/catalyst-components/text";
 
 export interface NavBarProps {
     nameOnPath: string
@@ -74,12 +73,6 @@ export default function NavbarIndex({nameOnPath}: NavBarProps) {
             </NavbarSection>
             <NavbarSpacer />
             <NavbarSection>
-                {/*<NavbarItem href="https://www.linkedin.com/in/nasserfarhat/" aria-label="Search">*/}
-                {/*    <Image width={20} height={20} src='/socialIcons/linkedin.png' alt="Linkedin"></Image>*/}
-                {/*</NavbarItem>*/}
-                {/*<NavbarItem href="mailto:nasserfarhatt@gmail.com" aria-label="Search">*/}
-                {/*    <InboxIcon></InboxIcon>*/}
-                {/*</NavbarItem>*/}
             </NavbarSection>
         </Navbar>
     )
