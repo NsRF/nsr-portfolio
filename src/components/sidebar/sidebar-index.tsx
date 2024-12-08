@@ -1,4 +1,4 @@
-import { Avatar } from '@/components/avatar'
+import { Avatar } from '@/components/catalyst-components/avatar'
 import {
     Dropdown,
     DropdownButton,
@@ -6,7 +6,7 @@ import {
     DropdownItem,
     DropdownLabel,
     DropdownMenu,
-} from '@/components/dropdown'
+} from '@/components/catalyst-components/dropdown'
 import {
     Sidebar,
     SidebarBody,
@@ -16,7 +16,7 @@ import {
     SidebarLabel,
     SidebarSection,
     SidebarSpacer,
-} from '@/components/sidebar'
+} from '@/components/catalyst-components/sidebar'
 import {
     ArrowRightStartOnRectangleIcon,
     ChevronDownIcon,
@@ -62,7 +62,7 @@ export interface SideBarProps {
     nameOnPath: string,
 }
 
-export default function SideBarIndex({nameOnPath} : SideBarProps) {
+export default function SidebarIndex({nameOnPath} : SideBarProps) {
     return (
         <Sidebar>
             <SidebarHeader>

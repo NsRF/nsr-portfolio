@@ -1,14 +1,12 @@
-import NavBarIndex from "@/components/NavBar/NavBarIndex";
-import {StackedLayout} from "@/components/stacked-layout";
-import {SidebarLayout} from "@/components/sidebar-layout";
-import SideBarIndex from "@/components/sidebar/SideBarIndex";
-import PersonalProjects from "@/components/personalproject/personalproject";
+import {SidebarLayout} from "@/components/catalyst-components/sidebar-layout";
+import SidebarIndex from "@/components/sidebar/sidebar-index";
+import PersonalProjects from "@/components/personal-project/personal-project";
 
 
 export default function PersonalPage(){
     return(
         <>
-            <SidebarLayout navbar={<></>} sidebar={<><SideBarIndex nameOnPath={"Personal Projects"}></SideBarIndex></>}>
+            <SidebarLayout navbar={<></>} sidebar={<><SidebarIndex nameOnPath={"Personal Projects"}></SidebarIndex></>}>
                 <PersonalProjects></PersonalProjects>
             </SidebarLayout>
         </>

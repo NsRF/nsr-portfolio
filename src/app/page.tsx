@@ -1,16 +1,14 @@
 'use client'
 
 import { useRef } from 'react';
-import { StackedLayout } from "@/components/stacked-layout";
-import NavBarIndex from "@/components/NavBar/NavBarIndex";
 import Info from "@/components/Info/info";
-import ContentMainPage from "@/components/Content/content";
-import CompaniesInfo from "@/components/CompaniesInfo/companiesInfo";
-import MainHeader from "@/components/mainheader/mainheader";
+import ContentMainPage from "@/components/content/content";
+import CompaniesInfo from "@/components/companies-info/companies-info";
+import MainHeader from "@/components/main-header/main-header";
 import useOnScreen from "@/components/hooks/onscreen-viewer";
 import SkillsInfo from "@/components/skills/skillsinfo";
-import {SidebarLayout} from "@/components/sidebar-layout";
-import SideBarIndex from "@/components/sidebar/SideBarIndex";
+import {SidebarLayout} from "@/components/catalyst-components/sidebar-layout";
+import SidebarIndex from "@/components/sidebar/sidebar-index";
 import AboutMe from "@/components/aboutme/aboutme";
 
 export default function Home() {
@@ -29,7 +27,7 @@ export default function Home() {
     const isAboutMeVisible = useOnScreen(aboutMePageRef);
 
     return (
-        <SidebarLayout navbar={<></>} sidebar={<><SideBarIndex nameOnPath={"Home"}></SideBarIndex></>}>
+        <SidebarLayout navbar={<></>} sidebar={<><SidebarIndex nameOnPath={"Home"}></SidebarIndex></>}>
             <div
                 ref={infoRef}
                 className={`transition-opacity duration-1000 ${isInfoVisible ? 'opacity-100' : 'opacity-0'}`}

@@ -1,4 +1,4 @@
-import { Avatar } from '@/components/avatar'
+import { Avatar } from '@/components/catalyst-components/avatar'
 import {
     Dropdown,
     DropdownButton,
@@ -6,14 +6,14 @@ import {
     DropdownItem,
     DropdownLabel,
     DropdownMenu,
-} from '@/components/dropdown'
-import { Navbar, NavbarDivider, NavbarItem, NavbarLabel, NavbarSection, NavbarSpacer } from '@/components/navbar'
+} from '@/components/catalyst-components/dropdown'
+import { Navbar, NavbarDivider, NavbarItem, NavbarLabel, NavbarSection, NavbarSpacer } from '@/components/catalyst-components/navbar'
 import {
     ChevronDownIcon,
 } from '@heroicons/react/16/solid'
 import Image from "next/image";
 import {InboxIcon} from "@heroicons/react/24/solid";
-import {Text} from "@/components/text";
+import {Text} from "@/components/catalyst-components/text";
 
 export interface NavBarProps {
     nameOnPath: string
@@ -35,7 +35,7 @@ const navBarPaths: NavBarOptions[] = [
     },
 ]
 
-export default function NavBarIndex({nameOnPath}: NavBarProps) {
+export default function NavbarIndex({nameOnPath}: NavBarProps) {
 
 
     return (

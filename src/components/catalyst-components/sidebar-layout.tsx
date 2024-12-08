@@ -3,6 +3,7 @@
 import * as Headless from '@headlessui/react'
 import React, { useState } from 'react'
 import { NavbarItem } from './navbar'
+import FooterComponent from "@/components/footer/footer-component";
 
 function OpenMenuIcon() {
   return (
@@ -44,23 +45,26 @@ function MobileSidebar({ open, close, children }: React.PropsWithChildren<{ open
   )
 }
 
-export function StackedLayout({
+export function SidebarLayout({
   navbar,
   sidebar,
   children,
 }: React.PropsWithChildren<{ navbar: React.ReactNode; sidebar: React.ReactNode }>) {
-  const [showSidebar, setShowSidebar] = useState(false)
+  let [showSidebar, setShowSidebar] = useState(false)
 
   return (
-    <div className="relative isolate flex min-h-svh w-full flex-col bg-white lg:bg-zinc-100 dark:bg-zinc-800 dark:lg:bg-zinc-650">
+    <div className="relative isolate flex min-h-svh w-full  max-lg:flex-col lg:bg-zinc-100 dark:bg-zinc-900 dark:lg:bg-zinc-950">
+      {/* Sidebar on desktop */}
+      <div className="fixed inset-y-0 left-0 w-64 max-lg:hidden">{sidebar}</div>
+
       {/* Sidebar on mobile */}
       <MobileSidebar open={showSidebar} close={() => setShowSidebar(false)}>
         {sidebar}
       </MobileSidebar>
 
-      {/* Navbar */}
-      <header className="flex items-center px-4">
-        <div className="py-2.5 lg:hidden">
+      {/* Navbar on mobile */}
+      <header className="flex items-center px-4 lg:hidden">
+        <div className="py-2.5">
           <NavbarItem onClick={() => setShowSidebar(true)} aria-label="Open navigation">
             <OpenMenuIcon />
           </NavbarItem>
@@ -68,11 +72,12 @@ export function StackedLayout({
         <div className="min-w-0 flex-1">{navbar}</div>
       </header>
 
-      {/* Content */}
-      <main className="flex flex-1 flex-col pb-2 lg:px-2">
-        <div className="grow p-6 lg:rounded-lg lg:bg-white lg:p-10 lg:shadow-sm lg:ring-1 lg:ring-zinc-950/5 dark:lg:bg-zinc-900 dark:lg:ring-white/10">
+      {/* content */}
+      <main className="flex flex-1 flex-col pb-2 lg:min-w-0 lg:pl-64 lg:pr-2 lg:pt-2">
+        <div className="grow p-6 lg:rounded-lg lg:bg-white lg:p-10 lg:shadow-sm lg:ring-1 lg:ring-zinc-950/5 bg-wave-pattern bg-cover bg-center dark:lg:bg-zinc-900 dark:lg:ring-white/10">
           <div className="mx-auto max-w-6xl">{children}</div>
         </div>
+          <FooterComponent></FooterComponent>
       </main>
     </div>
   )

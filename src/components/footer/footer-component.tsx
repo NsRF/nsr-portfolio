@@ -1,5 +1,3 @@
-import { JSX, SVGProps } from "react"
-
 const navigation = [
     {
         name: 'Instagram',

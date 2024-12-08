@@ -1,5 +1,5 @@
 import Info from "@/components/Info/info";
-import TimeLine from "@/components/Timeline/timeline";
+import TimeLine from "@/components/timeline/timeline";
 
 
 export default function ContentMainPage() {
