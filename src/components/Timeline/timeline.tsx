@@ -8,8 +8,28 @@ type TimeLineInfos = {
 
 const timeLineInformations: TimeLineInfos[] = [
     {
+        title: "Comgás",
+        date: "03/2024 - Present",
+        role: "Tech Lead Cross",
+        description: "• Lead and guide cross-functional teams, ensuring all teams are aligned with project goals, timelines, and best \n" +
+            "practices.\n" +
+            " • Architect and design new solutions from the ground up, ensuring that they meet both current and future \n" +
+            "business needs. This includes defining the overall structure, technology stack, and ensuring seamless \n" +
+            "integration across all components.\n" +
+            " • Collaborate with architects and senior developers to develop scalable, maintainable, and high-performance \n" +
+            "systems using Angular, ASP.NET, and Kotlin.\n" +
+            " • Oversee the creation and management of CI/CD pipelines using Azure Portal and Kubernetes, ensuring \n" +
+            "smooth deployment and hosting of services.\n" +
+            " • Directly manage the process for opening production changes, ensuring each release is thoroughly tested, \n" +
+            "secure, and deployable with minimal disruption.\n" +
+            " • Work closely with development teams to mentor and support them, providing expertise in solving complex \n" +
+            "technical problems and guiding them in architectural decisions.\n" +
+            " • Ensure seamless communication across teams to facilitate the implementation of new features and \n" +
+            "improvements, maintaining a consistent approach to development and deployment"
+    },
+    {
         title: "Prover Soluções em Tecnologia",
-        date: "03/2019 - Present",
+        date: "03/2019 - 03/2024",
         role: "Senior Developer, Tech Lead, and DevOps Specialist",
         description: "•\tPlayed multiple roles, from senior developer to solution architect, across diverse projects.\n" +
             "\n" +

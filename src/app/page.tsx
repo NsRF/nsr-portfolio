@@ -11,6 +11,7 @@ import useOnScreen from "@/components/hooks/onscreen-viewer";
 import SkillsInfo from "@/components/skills/skillsinfo";
 import {SidebarLayout} from "@/components/sidebar-layout";
 import SideBarIndex from "@/components/sidebar/SideBarIndex";
+import AboutMe from "@/components/aboutme/aboutme";
 
 export default function Home() {
     const infoRef = useRef<HTMLDivElement>(null);
@@ -18,12 +19,14 @@ export default function Home() {
     const companiesInfoRef = useRef<HTMLDivElement>(null);
     const contentMainPageRef = useRef<HTMLDivElement>(null);
     const skillsPageRef = useRef<HTMLDivElement>(null);
+    const aboutMePageRef = useRef<HTMLDivElement>(null);
 
     const isInfoVisible = useOnScreen(infoRef);
     const isMainHeaderVisible = useOnScreen(mainHeaderRef);
     const isCompaniesInfoVisible = useOnScreen(companiesInfoRef);
     const isContentMainPageVisible = useOnScreen(contentMainPageRef);
     const isSkillVisible = useOnScreen(skillsPageRef);
+    const isAboutMeVisible = useOnScreen(aboutMePageRef);
 
     return (
         <SidebarLayout navbar={<></>} sidebar={<><SideBarIndex nameOnPath={"Home"}></SideBarIndex></>}>
@@ -56,6 +59,12 @@ export default function Home() {
                 className={`transition-opacity duration-1000 ${isContentMainPageVisible ? 'opacity-100' : 'opacity-0'}`}
             >
                 <ContentMainPage/>
+            </div>
+            <div
+                ref={aboutMePageRef}
+                className={`transition-opacity duration-1000 ${isAboutMeVisible ? 'opacity-100' : 'opacity-0'}`}
+            >
+                <AboutMe/>
             </div>
         </SidebarLayout>
     );
