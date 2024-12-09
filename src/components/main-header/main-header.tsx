@@ -1,11 +1,6 @@
 export default function MainHeader() {
     return (
-        <div className="relative isolate overflow-hidden rounded-2xl px-6 py-24 sm:py-32 lg:px-8">
-            <img
-                alt=""
-                src="/wave-header.svg"
-                className="absolute mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10 inset-0 -z-10 h-full w-full object-cover opacity-90"
-            />
+        <div className="relative bg-gray-800 bg-opacity-80 isolate overflow-hidden rounded-2xl px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-3xl text-center space-y-8">
                 <h1 className="text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-red-500 to-red-700 animate-pulse">
                     Nasser Farhat
