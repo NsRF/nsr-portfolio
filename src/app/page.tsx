@@ -73,14 +73,14 @@ export default function Home() {
                 </motion.section>
                 
                 {/* Contact Section */}
-                <motion.section 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                >
-                    <Contact/>
-                </motion.section>
+                {/*<motion.section */}
+                {/*    initial={{ opacity: 0 }}*/}
+                {/*    whileInView={{ opacity: 1 }}*/}
+                {/*    transition={{ duration: 0.6 }}*/}
+                {/*    viewport={{ once: true, margin: "-100px" }}*/}
+                {/*>*/}
+                {/*    <Contact/>*/}
+                {/*</motion.section>*/}
             </div>
             
             {/* Footer */}

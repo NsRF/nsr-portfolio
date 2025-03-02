@@ -114,12 +114,12 @@ export default function MainHeader() {
                             >
                                 Download Resume
                             </a>
-                            <a 
-                                href="#contact" 
-                                className="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium shadow-sm hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors"
-                            >
-                                Contact Me
-                            </a>
+                            {/*<a */}
+                            {/*    href="#contact" */}
+                            {/*    className="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium shadow-sm hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors"*/}
+                            {/*>*/}
+                            {/*    Contact Me*/}
+                            {/*</a>*/}
                         </motion.div>
                     </motion.div>
                 </div>

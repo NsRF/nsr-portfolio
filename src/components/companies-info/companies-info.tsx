@@ -6,16 +6,16 @@ const companies = [
   {
     name: "Comgas",
     logo: "/companies/comgas-logo.png",
-    role: "Senior Full-Stack Developer",
+    role: "Tech Lead Cross",
     industry: "Energy",
-    period: "2022-2023"
+    period: "2024-Present"
   },
   {
     name: "CCAB",
     logo: "https://ccab.org.br/wp-content/uploads/Logos-18-CCAB.png",
     role: "Tech Lead",
     industry: "Agriculture",
-    period: "2021-2022"
+    period: "2021-2024"
   },
   {
     name: "MedGrupo",
@@ -27,16 +27,16 @@ const companies = [
   {
     name: "PNCP",
     logo: "/companies/pncp.webp",
-    role: "Software Architect",
+    role: "Mid Level .NET Developer",
     industry: "Government",
     period: "2019-2020"
   },
   {
     name: "Intelltech",
     logo: "/companies/intelltech.png",
-    role: "Lead Developer",
+    role: "Senio FullStack Developer - Part Time",
     industry: "Technology",
-    period: "2018-2019"
+    period: "2022-2023"
   }
 ];
 
