@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://nasser.dev",
+    url: "https://nasserfarhat.com",
     title: "Nasser Farhat | Senior Full-Stack Developer",
     description: "Senior Full-Stack Developer specializing in .NET, Node.js, React, and cloud technologies. Available for global remote opportunities.",
     siteName: "Nasser Farhat Portfolio"
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
