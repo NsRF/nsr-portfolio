@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GeistVF';
+  src: url('./fonts/GeistVF.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GeistMonoVF';
+  src: url('./fonts/GeistMonoVF.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #fcfcfc;
   --foreground: #171717;
+  --primary: #006fee;
+  --secondary: #17c964;
+  --accent: #f5a524;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --card: #ffffff;
+  --card-foreground: #27272a;
+  --border: #e4e4e7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #050505;
+    --foreground: #f7f7f7;
+    --primary: #0072f5;
+    --secondary: #17c964;
+    --accent: #f5a524;
+    --muted: #18181b;
+    --muted-foreground: #a1a1aa;
+    --card: #121212;
+    --card-foreground: #fafafa;
+    --border: #27272a;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'GeistVF', ui-sans-serif, system-ui, sans-serif;
+}
+
+code, pre, kbd {
+  font-family: 'GeistMonoVF', ui-monospace, monospace;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+}
+
+.prose {
+  max-width: 65ch;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+  max-width: 1440px;
 }
