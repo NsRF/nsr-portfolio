@@ -34,7 +34,7 @@ const companies = [
   {
     name: "Intelltech",
     logo: "/companies/intelltech.png",
-    role: "Senio FullStack Developer - Part Time",
+    role: "Senior FullStack Developer - Part Time",
     industry: "Technology",
     period: "2022-2023"
   }
@@ -105,7 +105,7 @@ export default function CompaniesInfo() {
                       <div className="text-sm text-muted-foreground mt-1 mb-2">{company.role}</div>
                       <div className="flex items-center justify-center space-x-2">
                         <span className="inline-flex items-center rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-medium text-primary">{company.industry}</span>
-                        <span className="inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium">{company.period}</span>
+                        {/*<span className="inline-flex items-center rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium">{company.period}</span>*/}
                       </div>
                     </div>
                   </motion.div>
@@ -124,14 +124,14 @@ export default function CompaniesInfo() {
             <p className="text-muted-foreground text-sm">
               Currently open to new opportunities with forward-thinking companies globally.
             </p>
-            <div className="mt-8">
-              <a 
-                href="#contact" 
-                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-colors"
-              >
-                Discuss Your Project
-              </a>
-            </div>
+            {/*<div className="mt-8">*/}
+            {/*  <a */}
+            {/*    href="#contact" */}
+            {/*    className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-colors"*/}
+            {/*  >*/}
+            {/*    Discuss Your Project*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </motion.div>
         </motion.div>
       </div>

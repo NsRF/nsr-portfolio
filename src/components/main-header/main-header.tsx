@@ -106,20 +106,14 @@ export default function MainHeader() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1.1, duration: 0.7 }}
                         >
-                            <a 
-                                href="/nasser_farhat_resume.pdf" 
+                            <a
+                                href="https://linkedin.com/in/nasserfarhat"
                                 target="_blank"
                                 className="inline-flex h-11 items-center justify-center rounded-md border border-primary bg-primary px-6 py-3 text-sm font-medium text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/30 transition-colors"
                                 rel="noopener noreferrer"
                             >
-                                Download Resume
+                                Contact Me
                             </a>
-                            {/*<a */}
-                            {/*    href="#contact" */}
-                            {/*    className="inline-flex h-11 items-center justify-center rounded-md border border-border bg-background px-6 py-3 text-sm font-medium shadow-sm hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary/20 transition-colors"*/}
-                            {/*>*/}
-                            {/*    Contact Me*/}
-                            {/*</a>*/}
                         </motion.div>
                     </motion.div>
                 </div>

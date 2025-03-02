@@ -15,7 +15,7 @@ const projects = [
       "Originally built with ASP.NET 6, it was recently upgraded to ASP.NET 8 with MongoDB for faster data handling, employing Hexagonal Architecture with Domain-Driven Design (DDD)."
     ],
     techStack: [
-      { name: "ASP.NET 8", category: "Backend" },
+      { name: "ASP.NET 8 CQRS Pattern", category: "Backend" },
       { name: "MongoDB", category: "Database" },
       { name: "Next.js", category: "Frontend" },
       { name: "TypeScript", category: "Language" },
@@ -33,8 +33,8 @@ const projects = [
     mediaSrc: "/ambar-preview.mp4",
     mediaAlt: "Ambar Performance Interface Preview",
     links: [
-      { type: "demo", label: "Live Demo", url: "#" },
-      { type: "case-study", label: "Case Study", url: "#" }
+      { type: "demo", label: "TailwindCSS", url: "#" },
+      { type: "case-study", label: ".NET 8 CQRS", url: "#" }
     ]
   }
 ];

@@ -86,17 +86,17 @@ export default function TimeLine() {
                             className="mb-16 relative"
                         >
                             <div className={`absolute top-0 left-1/2 w-px h-full bg-gradient-to-b ${
-                                index % 2 === 0 ? 'from-red-500 to-zinc-700' : 'from-zinc-700 to-red-500'
+                                index % 2 === 0 ? 'from-blue-500 to-zinc-700' : 'from-zinc-700 to-blue-500'
                             } -ml-px ${index === timeLineInformations.length - 1 ? 'hidden' : ''}`}></div>
                             
                             <div className="flex items-center justify-center mb-4">
                                 <div className={`w-12 h-12 rounded-full bg-zinc-800 border-2 ${
-                                    index % 2 === 0 ? 'border-red-500' : 'border-zinc-600'
+                                    index % 2 === 0 ? 'border-blue-500' : 'border-zinc-600'
                                 } flex items-center justify-center z-10`}>
                                     <svg
                                         aria-hidden="true"
                                         focusable="false"
-                                        className={`w-6 h-6 ${index % 2 === 0 ? 'text-red-500' : 'text-zinc-400'}`}
+                                        className={`w-6 h-6 ${index % 2 === 0 ? 'text-blue-500' : 'text-zinc-400'}`}
                                         role="img"
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 448 512"
@@ -109,7 +109,7 @@ export default function TimeLine() {
                                 </div>
                             </div>
                             
-                            <div className={`bg-zinc-800 rounded-xl overflow-hidden shadow-lg border border-zinc-700 hover:border-red-500/30 transition-all duration-300 transform hover:-translate-y-1`}>
+                            <div className={`bg-zinc-800 rounded-xl overflow-hidden shadow-lg border border-zinc-700 hover:border-blue-500/30 transition-all duration-300 transform hover:-translate-y-1`}>
                                 <div className="p-6">
                                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
                                         <div className="flex items-center mb-2 sm:mb-0">
@@ -122,7 +122,7 @@ export default function TimeLine() {
                                             )}
                                             <h3 className="text-xl font-bold text-white">{info.title}</h3>
                                         </div>
-                                        <span className="px-3 py-1 text-sm font-medium rounded-full bg-red-500/20 text-red-400">
+                                        <span className="px-3 py-1 text-sm font-medium rounded-full bg-blue-500/20 text-blue-400">
                                             {info.date}
                                         </span>
                                     </div>

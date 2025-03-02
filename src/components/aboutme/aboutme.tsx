@@ -67,7 +67,7 @@ export default function AboutMe() {
                         transition={{ duration: 0.5 }}
                         className="relative overflow-hidden rounded-2xl bg-zinc-800 p-8 shadow-lg border border-zinc-700"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-transparent opacity-50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent opacity-50"></div>
                         <div className="relative z-10">
                             <h3 className="text-2xl font-bold text-white mb-4">My Philosophy</h3>
                             <p className="text-gray-300 mb-6">
@@ -85,7 +85,7 @@ export default function AboutMe() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="relative overflow-hidden rounded-2xl bg-zinc-800 p-8 shadow-lg border border-zinc-700"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-red-500/10 opacity-50"></div>
+                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-blue-500/10 opacity-50"></div>
                         <div className="relative z-10">
                             <h3 className="text-2xl font-bold text-white mb-4">Get In Touch</h3>
                             <p className="text-gray-300 mb-6">
@@ -99,9 +99,9 @@ export default function AboutMe() {
                                         href={link.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-700/50 text-gray-300 hover:bg-red-500/20 hover:text-white transition-all duration-300"
+                                        className="flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-700/50 text-gray-300 hover:bg-blue-500/20 hover:text-white transition-all duration-300"
                                     >
-                                        <span className="text-red-400">{link.icon}</span>
+                                        <span className="text-blue-400">{link.icon}</span>
                                         <span>{link.name}</span>
                                     </a>
                                 ))}
@@ -117,7 +117,7 @@ export default function AboutMe() {
                     className="mt-16 flex justify-center"
                 >
                     <div className="relative">
-                        <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-red-500 to-red-600 blur-sm opacity-75"></div>
+                        <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 blur-sm opacity-75"></div>
                         <div className="relative overflow-hidden rounded-full bg-zinc-800 p-1">
                             <img 
                                 src="/yellow-backgrond.png" 
@@ -131,7 +131,7 @@ export default function AboutMe() {
                                     href="https://github.com/nsrf" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="p-2 rounded-full bg-zinc-800/90 text-red-400 hover:text-white transition-colors duration-300"
+                                    className="p-2 rounded-full bg-zinc-800/90 text-blue-400 hover:text-white transition-colors duration-300"
                                 >
                                     <svg fill="currentColor" viewBox="0 0 24 24" className="size-5">
                                         <path
@@ -145,7 +145,7 @@ export default function AboutMe() {
                                     href="https://www.linkedin.com/in/nasserfarhat/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="p-2 rounded-full bg-zinc-800/90 text-red-400 hover:text-white transition-colors duration-300"
+                                    className="p-2 rounded-full bg-zinc-800/90 text-blue-400 hover:text-white transition-colors duration-300"
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 50 50" className="size-5">
                                         <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56c3.97,0,7.19,2.73,7.19,8.26V39z"/>
@@ -163,7 +163,7 @@ export default function AboutMe() {
                     className="mt-8 text-center"
                 >
                     <h3 className="text-xl font-bold text-white">Nasser Farhat</h3>
-                    <p className="text-red-400 font-medium">Senior Full-Stack Developer</p>
+                    <p className="text-blue-400 font-medium">Senior Full-Stack Developer</p>
                 </motion.div>
             </div>
         </div>
