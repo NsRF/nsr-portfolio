@@ -14,7 +14,7 @@ const companies = [
     name: "CCAB",
     logo: "https://ccab.org.br/wp-content/uploads/Logos-18-CCAB.png",
     role: "Tech Lead",
-    industry: "Agriculture",
+    industry: "Government",
     period: "2021-2024"
   },
   {
